@@ -20,7 +20,7 @@ public class BoardDao {
 	
 	
 	public int updateBoard(Board board) {
-		return sqlSessionTemplate.update("kr.or.ksmart.service.BoardMapper.deleteBoard",board);
+		return sqlSessionTemplate.update("kr.or.ksmart.service.BoardMapper.updateBoard",board);
         /*Connection connection = null;
         PreparedStatement statement = null;
         int row = 0;
@@ -107,7 +107,7 @@ public class BoardDao {
     	Map<String, Integer> map = new HashMap<String, Integer>();
     	map.put("beginRow", (currentPage-1)*pagePerRow);
     	map.put("pagePerRow", pagePerRow);
-    	return sqlSessionTemplate.selectList("kr.or.ksmart.service.BoardMapper.getBoardCount",map);
+    	return sqlSessionTemplate.selectList("kr.or.ksmart.service.BoardMapper.getBoardList",map);
     }
     /*public ArrayList<Board> getBoardList(int currentPage, int pagePerRow) {
         ArrayList<Board> list = new ArrayList<Board>();
@@ -163,7 +163,7 @@ public class BoardDao {
             try {statement.close();} catch(Exception e){}
             try {connection.close();} catch(Exception e){}
         }*/
-        return sqlSessionTemplate.selectOne("kr.or.ksmart.service.BoardMapper.getBoardCount");
+        return sqlSessionTemplate.selectOne("kr.or.ksmart.service.BoardMapper.getBoard");
     }
     
     // 글쓰기 메서드

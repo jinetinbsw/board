@@ -17,7 +17,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  
 <script>
-	// jquery
     $(document).ready(function(){
     //    alert('jquery test');
     /* 입력폼 유효성 관련 요구사항
@@ -43,11 +42,11 @@
         });
     });
 </script>
-<title>BOARD ADD(Spring MVC)</title>
+<title>BOARD ADD(spring mvc + mybatis 방식)</title>
 </head>
 <body>
 <div class="container">
-    <h1>BOARD ADD(Spring MVC)</h1>
+    <h1>BOARD ADD(spring mvc + mybatis 방식)</h1>
     <form id="addForm" action="${pageContext.request.contextPath}/boardAdd" method="post">
         <div class="form-group">
             <label for="boardPw">boardPw :</label>

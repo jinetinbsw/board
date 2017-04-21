@@ -35,11 +35,11 @@
         });
     });
 </script>
-<title>BOARD MODIFY FORM(모델2 방식)</title>
+<title>BOARD MODIFY FORM(spring mvc + mybatis 방식)</title>
 </head>
 <body>
 <div class="container">
-    <h1>BOARD MODIFY FORM(모델2 방식)</h1> 
+    <h1>BOARD MODIFY FORM(spring mvc + mybatis 방식)</h1> 
     <form id="modifyForm" action="${pageContext.request.contextPath}/boardModify" method="post">
         <div class="form-group">boardNo :
             <input class="form-control" name="boardNo" value="${board.boardNo}" type="text" readonly="readonly"/>

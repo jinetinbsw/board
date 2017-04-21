@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>BOARD LIST(모델2 방식)</h1>
+    <h1>BOARD LIST(spring mvc + mybatis 방식)</h1>
     <div>전체행의 수 : ${totalRowCount}</div>
     <table class="table table-striped">
         <thead>
@@ -50,4 +50,3 @@
 </div>
 </body>
 </html>
-

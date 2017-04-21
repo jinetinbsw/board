@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>BOARD VIEW(모델2 방식)</h1>
+    <h1>BOARD VIEW(spring mvc + mybatis 방식)</h1>
      <table class="table">
          <tbody>
              <tr>
@@ -46,4 +46,3 @@
 </div>
 </body>
 </html>
-
