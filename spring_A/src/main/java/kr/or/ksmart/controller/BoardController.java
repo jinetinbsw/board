@@ -49,7 +49,7 @@ public class BoardController {
 		return "/boardView";
 	}
 	
-	@RequestMapping(value={"/","/boardList"}, method = RequestMethod.GET)
+	@RequestMapping(value={"/boardList"}, method = RequestMethod.GET)
 	public String boardList(Model model,@RequestParam(value="currentPage", required=false, defaultValue="1") int currentPage){
 		int boardCount = boardDao.getBoardCount();
 		int pagePerRow = 10;
@@ -60,6 +60,7 @@ public class BoardController {
 		model.addAttribute("lastPage",lastPage);
 		model.addAttribute("list",list);
 		return "/boardList";
+		// @RequestMapping(value={"/","???"}, method = RequestMethod.GET) 으로  value의 첫 번째 인자를 "/"로 설정하는 경우에 루트 디렉토리가 중복될 수 있으므로 주의를 요망한다.
 	}
 	
 	@RequestMapping(value="/boardAdd", method = RequestMethod.GET)

@@ -163,7 +163,8 @@ public class BoardDao {
             try {statement.close();} catch(Exception e){}
             try {connection.close();} catch(Exception e){}
         }*/
-        return sqlSessionTemplate.selectOne("kr.or.ksmart.service.BoardMapper.getBoard");
+        return sqlSessionTemplate.selectOne("kr.or.ksmart.service.BoardMapper.getBoardCount");
+        // kr.or.ksmart.service.BoardMapper.getBoard로 설정되어있을 때는 getBoardCount메서드에서 getBoard를 계속 호출하는 격이 되어서 nullpointer오류 발생
     }
     
     // 글쓰기 메서드
